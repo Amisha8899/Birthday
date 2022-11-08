@@ -187,7 +187,7 @@ function animate(){
     c.fillStyle = 'rgba(255,255,255,0.05)'
     c.fillRect(0,0,canvas.width,350);
     c.clearRect(0,350,innerWidth,innerHeight-350)
-    boundaryLine()
+//     boundaryLine()
     insertImage()
     setInterval(ballMovement(),7000)
     setInterval(ballGravity,7000)
