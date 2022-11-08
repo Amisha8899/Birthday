@@ -11,7 +11,7 @@ function boundaryLine(){
     c.strokeStyle="#FFBBBB"
     c.stroke();
 }
-var Colorarray = ["#BFFFF0","#FFE4C0","#FFBBBB","#F0FFC2"]
+var Colorarray =["#25316D", "#5F6F94", "#97D2EC", "#FEF5AC"]
 function insertImage() {
     image = new Image();
     image.src = "C:\\Users\\DELL\\Desktop\\AMISHA.jpg" ; 
@@ -156,7 +156,7 @@ function ballMovement(){
     for (let i = 0; i < CircleArray.length; i++) {
         CircleArray[i].update();
     }
-    fillText("HAPPY BIRTHDAY ADITI !!!")
+    fillText("HAPPY BIRTHDAY NEEMISHA !!!")
 }
 function ballGravity(){
     for (let i = 0; i < CircleArray.length; i++) {
