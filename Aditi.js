@@ -12,13 +12,6 @@ function boundaryLine(){
     c.stroke();
 }
 var Colorarray =["#25316D", "#5F6F94", "#97D2EC", "#FEF5AC"]
-function insertImage() {
-    image = new Image();
-    image.src = "C:\\Users\\DELL\\Desktop\\AMISHA.jpg" ; 
-    image.onload = function(){
-      c.drawImage(image, 900,1300,500,350);
-    }
-  }
 var mouse = {
     x:undefined,
     y:undefined
@@ -156,7 +149,7 @@ function ballMovement(){
     for (let i = 0; i < CircleArray.length; i++) {
         CircleArray[i].update();
     }
-    fillText("HAPPY BIRTHDAY NEEMISHA !!!")
+    fillText("HAPPY BIRTHDAY !!!")
 }
 function ballGravity(){
     for (let i = 0; i < CircleArray.length; i++) {
@@ -187,8 +180,6 @@ function animate(){
     c.fillStyle = 'rgba(255,255,255,0.05)'
     c.fillRect(0,0,canvas.width,350);
     c.clearRect(0,350,innerWidth,innerHeight-350)
-//     boundaryLine()
-    insertImage()
     setInterval(ballMovement(),7000)
     setInterval(ballGravity,7000)
     setInterval(particle ,10000);
